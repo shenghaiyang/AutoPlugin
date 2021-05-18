@@ -1,5 +1,0 @@
-rootProject.name = 'AutoPlugin'
-
-include(":annotations")
-include(":processor")
-include(":sample")
