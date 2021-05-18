@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.shenghaiyang.auto.plugin'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(project(":annotations"))
+
+    def auto_service_version = "1.0"
+    implementation("com.google.auto.service:auto-service-annotations:${auto_service_version}")
+    annotationProcessor("com.google.auto.service:auto-service:${auto_service_version}")
+}

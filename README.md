@@ -1,0 +1,42 @@
+# AutoPlugin
+
+auto generate gradle plugin properties file.
+
+___status: working in progress___
+
+### Usage
+
+```java
+package com.example.auto.plugin;
+
+import com.shenghaiyang.auto.plugin.AutoPlugin;
+
+@AutoPlugin(pluginId = "plugin1")
+public class Plugin1 {
+}
+```
+
+AutoPlugin will generate the file `META-INF/gradle-plugins/plugin1.properties` in the output classes folder. The file will contain:`implementation-class=com.example.auto.plugin.Plugin1`.
+
+### TODO
+
+- incremental support
+- check plugin id pattern
+- check plugin id duplication
+
+
+### License
+
+    Copyright 2021 盛海洋.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
