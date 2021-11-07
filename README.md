@@ -1,5 +1,7 @@
 # AutoPlugin
 
+**Attention: Development on this tool is winding down. Please consider switching to [AutoGradlePlugin](https://github.com/shenghaiyang/auto-ksp/tree/main/gradle-plugin).**
+
 Auto generate gradle plugin properties file.
 
 ___status: working in progress___
